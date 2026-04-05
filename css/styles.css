@@ -168,7 +168,7 @@ header {
     to bottom, 
     rgba(46, 47, 66, 0.7),
     rgba(46, 47, 66, 0.7)),
-    url(../images/people-office\ 1.jpg);
+    url(../images/people-office.jpg);
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -226,7 +226,7 @@ header {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
-    margin-block: 8px;
+    margin-bottom: 8px;
 }
 
 .features-item-text {
@@ -243,6 +243,7 @@ header {
     height: 112px;
     background-color: #f4f4fd;
     position: relative;
+    margin-bottom: 8px;
 }
 
 .icon {
@@ -411,8 +412,7 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
-    padding-top: 40px;
-    padding-inline: 32px;
+    padding: 40px 32px;
 
     font-weight: 400;
     font-size: 16px;
@@ -463,6 +463,7 @@ header {
 
 .footer-content{
     display: flex;
+    align-items: baseline;
 }
 
 .footer-cont {
