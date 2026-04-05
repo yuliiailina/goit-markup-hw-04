@@ -154,12 +154,12 @@ header {
 
 .hero-button:hover,
 .hero-button:focus {
-    background: #404bbf;
+    background-color: #404bbf;
     cursor: pointer;
 }
 
 .hero {
-    background: #2e2f42;
+    background-color: #2e2f42;
     padding-block: 188px;
     max-width: 1440px;
     margin: 0 auto;
@@ -168,7 +168,7 @@ header {
     to bottom, 
     rgba(46, 47, 66, 0.7),
     rgba(46, 47, 66, 0.7)),
-    url(/images/people-office\ 1.jpg);
+    url(../images/people-office\ 1.jpg);
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -241,7 +241,7 @@ header {
     border-radius: 4px;
     width: 264px;
     height: 112px;
-    background: #f4f4fd;
+    background-color: #f4f4fd;
     position: relative;
 }
 
@@ -260,7 +260,7 @@ header {
 }
 
 .team {
-    background: #f4f4fd;
+    background-color: #f4f4fd;
     padding-block: 120px;
 }
 
@@ -280,7 +280,7 @@ header {
 }
 
 .team-item {
-    background: #fff;
+    background-color: #fff;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
     border-radius: 0 0 4px 4px;
     width: calc((100% - 24px * 3) / 4);
@@ -336,7 +336,7 @@ header {
 
 .team-social-link:hover,
 .team-social-link:focus {
-    background: #404bbf;
+    background-color: #404bbf;
     cursor: pointer;
 }
 
@@ -363,8 +363,14 @@ header {
 }
 
 .portfolio-item {
-    background: #fff;
+    background-color: #fff;
     width: calc((100% - 24px * 2) / 3);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-item:hover {
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    background: #fff;
 }
 
 .portfolio-item-content {
@@ -416,6 +422,7 @@ header {
     background-color:#4d5ae5;
 
     transform: translateY(100%);
+    transition-property: transform;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -424,15 +431,10 @@ header {
     transform: translateY(0);
 }
 
-.portfolio-item:hover {
-    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-    background: #fff;
-}
-
 /* --- footer --- */
 
 .footer {
-    background: #2e2f42;
+    background-color: #2e2f42;
     padding-block: 100px;
 }
 
